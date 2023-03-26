@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div id="container">
+    <dic>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>이름</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="member : ${members}">
+                    <td th:text="${member.id}"></td> <!--getid() 사용-->
+                    <td th:text="${member.name}"></td><!--getname() 사용-->
+                </tr>
+            </tbody>
+        </table>
+    </dic>
+</div>
+</body>
+</html>
