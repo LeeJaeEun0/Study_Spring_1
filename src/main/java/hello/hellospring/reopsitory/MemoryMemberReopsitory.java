@@ -36,6 +36,6 @@ public class MemoryMemberReopsitory implements MemberRepository{ //오버라이�
     }
 
     public void clearStore(){
-        store.clear();
+        store.clear(); 
     }
 } // end of class

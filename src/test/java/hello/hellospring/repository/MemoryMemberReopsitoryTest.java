@@ -28,7 +28,7 @@ public class MemoryMemberReopsitoryTest {
 
         repository.save(member); // repository에 값을 저장 - id가 세팅
 
-        Member result = repository.findById(member.getId()).get(); // 값을 꺼내서 result에 넣음
+        Member result = repository.findById(member.getId()).get(); // 값을 꺼내서 result에 넣음 // 넣은 값이 잘 들어갔는지 확인
         // System.out.println("result = " +(result == member)); // 결과가 같은지 확인 - 권장 안함
         //  Assertions.assertEquals(member, result); // 기대하는 값과 결과가 일치하는지
         //Assertions.assertThat(member).isEqualTo(result); // member과 result가 같은지 비교
